@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Room homepage</title>
+</head>
+<!-- Home
+    Shop
+    About
+    Contact
+    Shop now -->
+<!-- Nav end -->
+
+<body>
+        <nav class="topnav" id="myTopnav">
+            <a href="javascript:void(0);" class=" mob" onclick="responseNav()">
+                <img src="images/icon-hamburger.svg" class="menu-open" alt="Closed Hamburger Menu">
+                <svg class="menu-close" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.364.222l1.414 1.414L9.414 8l6.364 6.364-1.414 1.414L8 9.414l-6.364 6.364-1.414-1.414L6.586 8 .222 1.636 1.636.222 8 6.586 14.364.222z" fill="#000" fill-rule="evenodd" opacity=".201" /></svg>
+            </a>
+            <img src="images/logo.svg" class="logo" alt="Room Logo">
+            <div class="nav-links topnav ">
+                <a href="#">home</a>
+                <a href="#">shop</a>
+                <a href="#">about</a>
+                <a href="#">contact</a>
+            </div>
+        </nav>
+    <div class="hero-carousel" id="heroCarousel">
+        <div class="carousel-slide">
+            <img class="desk" src="images/desktop-image-hero-1.jpg" alt="First slide">
+            <img class="mob" src="images/mobile-image-hero-1.jpg" alt="First slide">
+            <div class="carousel-copy">
+                <h2>Discover innovative ways to decorate</h2>
+                <p>We provide unmatched quality, comfort, and style for property owners across the country.
+                    Our experts combine form and function in bringing your vision to life. Create a room in your
+                    own style with our collection and make your property a reflection of you and what you love.</p>
+                <a href="#">SHOP NOW<img id="arrow" src="images/icon-arrow.svg" alt="Shop Now Arrow"></a>
+            </div>
+        </div>
+        <div class="carousel-slide ">
+            <img class="desk" src="images/desktop-image-hero-2.jpg" alt="Second slide">
+            <img class="mob" src="images/mobile-image-hero-2.jpg" alt="Second slide">
+            <div class="carousel-copy">
+                <h2>We are available all across the globe</h2>
+                <p> With stores all over the world, it's easy for you to find furniture for your home or place of business.
+                    Locally, we’re in most major cities throughout the country. Find the branch nearest you using our
+                    store locator. Any questions? Don't hesitate to contact us today.</p>
+                <a href="#">SHOP NOW<img id="arrow" src="images/icon-arrow.svg" alt="Shop Now Arrow"></a>
+            </div>
+        </div>
+        <div class="carousel-slide ">
+            <img class="desk" src="images/desktop-image-hero-3.jpg" alt="Third slide">
+            <img class="mob" src="images/mobile-image-hero-3.jpg" alt="Third slide">
+            <div class="carousel-copy">
+                <h2> Manufactured with the best materials
+                </h2>
+                <p>Our modern furniture store provide a high level of quality. Our company has invested in advanced technology
+                    to ensure that every product is made as perfect and as consistent as possible. With three decades of
+                    experience in this industry, we understand what customers want for their home and office.</p>
+                <a href="#">SHOP NOW<img id="arrow" src="images/icon-arrow.svg" alt="Shop Now Arrow"></a>
+            </div>
+        </div>
+        <div class="carousel-controls">
+            <a class="carousel-control-prev" onclick="plusSlides(-1)" href="#">
+                <img src="images/icon-angle-left.svg" alt="Previous Arrow">
+            </a>
+            <a class="carousel-control-next" onclick="plusSlides(1)" href="#">
+                <img src="images/icon-angle-right.svg" alt="Next Arrow">
+            </a>
+        </div>
+    </div>
+    <div class="about-section">
+        <div class="img-left">
+            <img src="images/image-about-dark.jpg" alt="Image Left Dark">
+        </div>
+        <div class="copy-middle">
+            <h3>ABOUT OUR FURNITURE</h3>
+            <p> Our multifunctional collection blends design and function to suit your individual taste.
+                Make each room unique, or pick a cohesive theme that best express your interests and what
+                inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+                or anything in between. Product specialists are available to help you create your dream space.</p>
+            <div class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+                Coded by <a href="https://www.apclark.org" target="_blank">Andrew Clark</a>.
+            </div>
+        </div>
+        <div class="img-right">
+            <img src="images/image-about-light.jpg" alt="Image Right Light">
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
